@@ -1,0 +1,3 @@
+echo "/opt/tricore/security_monitor/tricore_security_main.sh &" > /etc/local.d/tricore_monitor.start
+chmod +x /etc/local.d/tricore_monitor.start
+rc-update add local default
