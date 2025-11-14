@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "=== TriCore Security Monitor Started ==="
+
+while true; do
+    /opt/tricore/security_monitor/monitor_processes.sh
+    /opt/tricore/security_monitor/monitor_network.sh
+    /opt/tricore/security_monitor/monitor_files.sh
+    /opt/tricore/security_monitor/alert.sh
+    sleep 30
+done
